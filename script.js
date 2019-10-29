@@ -19,6 +19,11 @@ function CreateGrid(squaresPerSide) {
 
     // convert the variable to number , to make sure that the Val in variable it is Number
     let temp = Number(squaresPerSide.toString())
+    if(isNaN(temp))
+    {
+        // 16 it is default Value
+        temp = 16;
+    }
     let count = temp * temp;
     let gridTemplateColumns = "";
 
